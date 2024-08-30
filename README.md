@@ -73,7 +73,7 @@ Step 3: The SWITCH function compares the result of SELECTEDVALUE with the values
 
 Step 4: The result of this measure is one of the three measures, depending on the value selected in the slicer/filter.
 
-![image](https://github.com/user-attachments/assets/d53cc180-5449-40a6-b2fb-009acaf1d128)
+![image](https://github.com/user-attachments/assets/59e57f55-affb-4d79-b80a-6ebf68a6fbb4)
 
 
 In order for the measure to work with the visualization, you need to change the “total sales” from the Y-axis to the new measure created.

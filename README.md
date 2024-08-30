@@ -1,4 +1,4 @@
-# SWITCH-function_with_charts
+ # SWITCH-function_with_charts
 Wondering how to allow the report user to change the measure that is displayed on the chart?  
 With help comes the SWITCH function !
 -------------------------
@@ -65,6 +65,7 @@ When SELECTEDVALUE returns 1, 2, 3, 4, or 5, SWITCH returns the corresponding me
 ---------------------------
 
 Step-by-Step Interpretation:
+
 Step 1: The SELECTEDVALUE function checks if a value has been selected in the slicer or filter from the 'XXX'[MeasureID] column.
 
 Step 2: If a specific value, e.g., 2, is selected, the result of SELECTEDVALUE is 2.

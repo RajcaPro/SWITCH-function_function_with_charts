@@ -54,6 +54,7 @@ SWITCH (
 SWITCH works similarly to a CASE statement in other programming languages. It compares an expression (in this case, the result from SELECTEDVALUE) with the values provided in subsequent arguments.
 When SELECTEDVALUE returns 1, 2, 3, 4, or 5, SWITCH returns the corresponding measure, i.e., [Total Profit], [Total Sales], [Total Cost].
 
+---------------------------
 
 Step-by-Step Interpretation:
 Step 1: The SELECTEDVALUE function checks if a value has been selected in the slicer or filter from the 'XXX'[MeasureID] column.

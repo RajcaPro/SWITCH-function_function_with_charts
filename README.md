@@ -55,6 +55,7 @@ SWITCH (
 
     3, [Total Cost],
 )
+
 SWITCH works similarly to a CASE statement in other programming languages. It compares an expression (in this case, the result from SELECTEDVALUE) with the values provided in subsequent arguments.
 
 When SELECTEDVALUE returns 1, 2, 3, 4, or 5, SWITCH returns the corresponding measure, i.e., [Total Profit], [Total Sales], [Total Cost].

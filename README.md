@@ -76,7 +76,7 @@ Step 4: The result of this measure is one of the three measures, depending on th
 
 In order for the measure to work with the visualization, you need to change the “total sales” from the Y-axis to the new measure created.
 
-![image](https://github.com/user-attachments/assets/73d6940e-6f05-479a-a612-5747c521c02e)
+![image](https://github.com/user-attachments/assets/170dd55d-b233-4270-95ee-4e673015f380)
 
 
 Everything works! ✨ This is the end of this guide !

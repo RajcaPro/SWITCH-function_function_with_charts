@@ -4,8 +4,8 @@ With help comes the SWITCH function !
 -------------------------
 For the purpose of the task, let's prepare a column chart -> stuck column chart.
 Let's put the year on the X-axis,
-on the Y-axis total sales,
-in the hatch, let's put the brand category.
+on the Y-axis total profit,
+in the hatch, let's put the product category.
 
 Result :
 

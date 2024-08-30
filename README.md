@@ -19,7 +19,8 @@ To solve our task we need two things :
 Let's create a new table !
 On the HOME tab, in the DATA section, you will find “Enter data”.
 
-![image](https://github.com/user-attachments/assets/c2ccddff-858b-4ae4-9f5d-4122f5dbec53)
+![image](https://github.com/user-attachments/assets/452680b7-96d5-4699-9aa0-dc5ec0aa0125)
+
 
 Next, let's create a list of measures that we want to switch on the chart.
 

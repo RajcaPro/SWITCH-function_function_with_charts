@@ -9,7 +9,8 @@ in the hatch, let's put the brand category.
 
 Result :
 
-![image](https://github.com/user-attachments/assets/4576b6e5-06f1-4db2-ab8c-e57de73c847b)
+![image](https://github.com/user-attachments/assets/68cca2ad-f26d-4219-9ac4-ebe4ba33bb55)
+
 
 To solve our task we need two things : 
 1) a table containing a list of names to which we will assign measures. The table will consist of two columns “measure id” and “measure names”.

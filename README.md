@@ -41,25 +41,33 @@ This DAX measure is used in Power BI and leverages the SWITCH function to dynami
 SELECTEDVALUE('XXX'[MeasureID], [Total Profit])
 
 The SELECTEDVALUE function returns a single selected value from the 'XXX'[MeasureID] column if a value is selected in a filter or slicer.
+
 If no value is selected, it returns the default value, which in this case is [Total Profit].
 
 2. SWITCH Function
 
 SWITCH (
     SELECTEDVALUE ( 'XXX'[MeasureID], [Total Profit] ),
+
     1, [Total Profit],
+
     2, [Total Sales],
+
     3, [Total Cost],
 )
 SWITCH works similarly to a CASE statement in other programming languages. It compares an expression (in this case, the result from SELECTEDVALUE) with the values provided in subsequent arguments.
+
 When SELECTEDVALUE returns 1, 2, 3, 4, or 5, SWITCH returns the corresponding measure, i.e., [Total Profit], [Total Sales], [Total Cost].
 
 ---------------------------
 
 Step-by-Step Interpretation:
 Step 1: The SELECTEDVALUE function checks if a value has been selected in the slicer or filter from the 'XXX'[MeasureID] column.
+
 Step 2: If a specific value, e.g., 2, is selected, the result of SELECTEDVALUE is 2.
+
 Step 3: The SWITCH function compares the result of SELECTEDVALUE with the values provided in its definition. If the result is 2, SWITCH returns [Total Sales].
+
 Step 4: The result of this measure is one of the three measures, depending on the value selected in the slicer/filter.
 
 ![image](https://github.com/user-attachments/assets/294e2adf-e72c-4e4b-8643-f94d524d2b2e)

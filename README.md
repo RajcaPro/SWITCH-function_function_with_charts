@@ -24,4 +24,39 @@ Next, let's create a list of measures that we want to switch on the chart.
 
 ![image](https://github.com/user-attachments/assets/ad27359d-448e-46d9-9eca-27e8316e1390)
 
+An important step is to sort the measure name column by ID. 
+This will allow us to freely set the order of measure display.
 
+To do this we click on the newly created table then on the “Measure Name” column we go to “Column tools” and in the Sort section we select Measure ID.
+
+![image](https://github.com/user-attachments/assets/f5f1411d-e91c-480d-b12c-19d399a1ce5a)
+
+Great !
+Now all that's left is to create a measure and add a slicer !
+
+This DAX measure is used in Power BI and leverages the SWITCH function to dynamically select and display different measures based on the value selected by the user. Below is a step-by-step explanation:
+
+1. SELECTEDVALUE Function
+
+SELECTEDVALUE('XXX'[MeasureID], [Total Profit])
+
+The SELECTEDVALUE function returns a single selected value from the 'XXX'[MeasureID] column if a value is selected in a filter or slicer.
+If no value is selected, it returns the default value, which in this case is [Total Profit].
+
+2. SWITCH Function
+
+SWITCH (
+    SELECTEDVALUE ( 'XXX'[MeasureID], [Total Profit] ),
+    1, [Total Profit],
+    2, [Total Sales],
+    3, [Total Cost],
+)
+SWITCH works similarly to a CASE statement in other programming languages. It compares an expression (in this case, the result from SELECTEDVALUE) with the values provided in subsequent arguments.
+When SELECTEDVALUE returns 1, 2, 3, 4, or 5, SWITCH returns the corresponding measure, i.e., [Total Profit], [Total Sales], [Total Cost].
+
+
+Step-by-Step Interpretation:
+Step 1: The SELECTEDVALUE function checks if a value has been selected in the slicer or filter from the 'XXX'[MeasureID] column.
+Step 2: If a specific value, e.g., 2, is selected, the result of SELECTEDVALUE is 2.
+Step 3: The SWITCH function compares the result of SELECTEDVALUE with the values provided in its definition. If the result is 2, SWITCH returns [Total Sales].
+Step 4: The result of this measure is one of the three measures, depending on the value selected in the slicer/filter.
